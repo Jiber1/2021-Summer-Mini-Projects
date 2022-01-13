@@ -1,0 +1,22 @@
+{
+    "manifest_version": 1,
+    "name": "Basic Adblocker",
+    "description": "Blocks ads from doubleclick",
+    "version": "1.0",
+    "author": "James Berg",
+    "browser_action": {
+        "default_title": "Basic Adblocker"
+    },
+    "permissions": [
+        "tabs",
+        "webNavigation",
+        "webRequest", 
+        "webRequestBlocking", 
+        "<all_urls>"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    }
+}
